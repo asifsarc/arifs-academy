@@ -1,8 +1,9 @@
+import Hero from "../../components/students/Hero";
 
 const Home = () => {
     return (
-        <div>
-            <h1 className="font-bold text-2xl text-black">Home</h1>
+        <div className="flex flex-col items-center space-y-7 text-center">
+            <Hero></Hero>
         </div>
     );
 };
