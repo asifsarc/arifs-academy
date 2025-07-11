@@ -1,9 +1,8 @@
-import React from 'react';
 
 const StudentsEnroll = () => {
     return (
         <div>
-            
+            <h1>Student Enroll</h1>
         </div>
     );
 };
