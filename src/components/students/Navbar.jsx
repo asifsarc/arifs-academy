@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="hidden md:flex  items-center gap-5">
         <div className="flex items-center gap-5">
           { user && <> <button onClick={() => { navigate('/educator')}} className="cursor-pointer hover:text-blue-600"> {isEducator ? 'Educator Dashboard' : 'Becom Educator'} </button> |{" "}
-          <Link className="hover:text-blue-600" to="/my-enorollments">My Enrollments</Link> </> } 
+          <Link className="hover:text-blue-600" to="/my-enrollments">My Enrollments</Link> </> } 
         </div>
        { user ?  <UserButton></UserButton> : 
        <button onClick={() => openSignIn()} className="bg-[#2563eb] text-white py-3 px-7 flex items-center justify-center rounded-full">
@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="md:hidden flex items-center gap-2 sm:gap-5 text-gray-500">
         <div className="flex text-sm items-center gap-1 sm:gap-2 max-sm:text-xs">
         { user && <> <button onClick={() => { navigate('/educator')}} className="cursor-pointer hover:text-blue-600"> {isEducator ? 'Educator Dashboard' : 'Becom Educator'} </button> |{" "}
-          <Link className="hover:text-blue-600" to="/my-enorollments">My Enrollments</Link> </> } 
+          <Link className="hover:text-blue-600" to="/my-enrollments">My Enrollments</Link> </> } 
         </div>
         {
           user ? <UserButton></UserButton> : <button onClick={() => openSignIn()}><img src={assets.user_icon} alt="" /></button>
