@@ -6,7 +6,7 @@ const TestimonialsSection = () => {
     
     return (
         <div>
-            <h2>Testimonials</h2>
+            <h2 className="text-2xl font-semibold py-2">Testimonials</h2>
             <p>Hear from our learners as they share their journeys of transformation, success, and how our < br/> platform has made a difference in their lives.</p>
             <div className="md:flex gap-4 space-y-5 py-5 md:space-y-0 px-8 max-w-6xl">
                 {
