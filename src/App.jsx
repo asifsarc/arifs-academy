@@ -15,11 +15,11 @@ import EducatorNavbar from "./components/educator/EducatorNavbar";
 
 
 const App = () => {
-  const isEducatorRous = useMatch('/educator/*')
+  const isEducatorRouts = useMatch('/educator/*')
   return (
     <div className="text-default min-h-screen bg-white">
       {
-        isEducatorRous ? <EducatorNavbar/> : <Navbar/>
+        isEducatorRouts ? <EducatorNavbar/> : <Navbar/>
       }
       <Routes>
         <Route path="/" element={<Home></Home>}/>
@@ -30,9 +30,9 @@ const App = () => {
         <Route path="/player/:courseId" element={<Player/> }/>
         <Route path="/loading/:path" element={<Loading/> }/>
         <Route path="/educator" element={<Educator/>}>
-          <Route path="educator" element={<Dashboard/>}/>
+          <Route index element={<Dashboard/>}/>
           <Route path="add-course" element={<AddCourse></AddCourse>}/>
-          <Route path="my-corses" element={<MyCourses></MyCourses>}/>
+          <Route path="my-courses" element={<MyCourses></MyCourses>}/>
           <Route path="student-enrolled" element={<StudentsEnroll></StudentsEnroll>}/>
         </Route>
 
