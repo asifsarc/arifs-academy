@@ -4,11 +4,16 @@ import CourseSection from "../../components/students/CourseSection";
 import TestimonialsSection from "../../components/students/TestimonialsSection";
 import CallToAction from "../../components/students/CallToAction";
 import Footer from "../../components/students/Footer";
+import Hero2 from "../../components/students/Hero2";
+
+
+
 
 const Home = () => {
     return (
         <div className="flex flex-col items-center space-y-7 text-center">
-            <Hero></Hero>
+            {/* <Hero></Hero> */}
+            <Hero2/>
             <Companies/>
             <CourseSection/>
             <TestimonialsSection/>
