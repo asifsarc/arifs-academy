@@ -12,7 +12,7 @@ const Hero2 = () => {
       <div className="absolute w-full h-full  ">
         <RippleGrid />
       </div>
-      <div className="flex  flex-col z-10 items-center justify-center w-full md:pt-36 md:pb-16 pt-20 px-7 md:px-0 space-y-7 text-center bg-gradient-to-b from-cyan-100/70">
+      <div className="flex  flex-col z-10 items-center justify-center w-full md:pt-36 md:pb-36 pt-20 px-7 md:px-0 space-y-7 text-center bg-gradient-to-b from-cyan-100/70">
         <h1 className=" text-2xl md:text-5xl md:hidden  relative font-bold text-gray-800 max-w-3xl mx-auto ">
       Empower your future with the courses designed to{" "}
       <span className="text-blue-600">
